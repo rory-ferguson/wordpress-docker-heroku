@@ -31,36 +31,36 @@
             "description": "Password for the database",
             "value": ""
         },
-        "AUTH_KEY": {
-            "description": "wp-config secret",
+        "WORDPRESS_AUTH_KEY": {
+            "description": "wp-config secret key",
             "generator": "secret"
         },
-        "SECURE_AUTH_KEY": {
-            "description": "wp-config secret",
+        "WORDPRESS_SECURE_AUTH_KEY": {
+            "description": "wp-config secret key",
             "generator": "secret"
         },
-        "LOGGED_IN_KEY": {
-            "description": "wp-config secret",
+        "WORDPRESS_LOGGED_IN_KEY": {
+            "description": "wp-config secret key",
             "generator": "secret"
         },
-        "NONCE_KEY": {
-            "description": "wp-config secret",
+        "WORDPRESS_NONCE_KEY": {
+            "description": "wp-config secret key",
             "generator": "secret"
         },
-        "AUTH_SALT": {
-            "description": "wp-config secret",
+        "WORDPRESS_AUTH_SALT": {
+            "description": "wp-config secret key",
             "generator": "secret"
         },
-        "SECURE_AUTH_SALT": {
-            "description": "wp-config secret",
+        "WORDPRESS_SECURE_AUTH_SALT": {
+            "description": "wp-config secret key",
             "generator": "secret"
         },
-        "LOGGED_IN_SALT": {
-            "description": "wp-config secret",
+        "WORDPRESS_LOGGED_IN_SALT": {
+            "description": "wp-config secret key",
             "generator": "secret"
         },
-        "NONCE_SALT": {
-            "description": "wp-config secret",
+        "WORDPRESS_NONCE_SALT": {
+            "description": "wp-config secret key",
             "generator": "secret"
         }
     },
@@ -74,5 +74,7 @@
           "quantity": 1,
           "size": "free"
         }
-      }
+      },
+      "stack": "heroku-22",
+      "logo": "https://d3a8m64wltxh5d.cloudfront.net/images/Logo.2e16d0ba.fill-140x64.png"
 }
