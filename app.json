@@ -1,0 +1,64 @@
+{
+    "name": "WordPress on Heroku",
+    "description": "WordPress project template for Heroku",
+    "keywords": [
+        "wordpress",
+        "aws",
+        "mysql",
+        "php"
+    ],
+    "website": "https://github.com/rory-ferguson/wordpress-docker-heroku",
+    "repository": "https://github.com/rory-ferguson/wordpress-docker-heroku",
+    "scripts": {},
+    "env": {
+        "HEROKU_APP_NAME": {
+            "description": "A Name for the Heroku Application [Optional]",
+            "required": false
+        },
+        "WP_ENV": {
+            "description": "Is this app for development or production?",
+            "value": "development"
+        },
+        "DATABASE_URL": {
+            "description": "The URL to a MySQL database",
+            "value": ""
+        },
+        "AUTH_KEY": {
+            "description": "wp-config secret",
+            "generator": "secret"
+        },
+        "SECURE_AUTH_KEY": {
+            "description": "wp-config secret",
+            "generator": "secret"
+        },
+        "LOGGED_IN_KEY": {
+            "description": "wp-config secret",
+            "generator": "secret"
+        },
+        "NONCE_KEY": {
+            "description": "wp-config secret",
+            "generator": "secret"
+        },
+        "AUTH_SALT": {
+            "description": "wp-config secret",
+            "generator": "secret"
+        },
+        "SECURE_AUTH_SALT": {
+            "description": "wp-config secret",
+            "generator": "secret"
+        },
+        "LOGGED_IN_SALT": {
+            "description": "wp-config secret",
+            "generator": "secret"
+        },
+        "NONCE_SALT": {
+            "description": "wp-config secret",
+            "generator": "secret"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/php"
+        }
+    ]
+}
