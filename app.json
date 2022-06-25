@@ -11,16 +11,24 @@
     "repository": "https://github.com/rory-ferguson/wordpress-docker-heroku",
     "scripts": {},
     "env": {
-        "HEROKU_APP_NAME": {
-            "description": "A Name for the Heroku Application [Optional]",
-            "required": false
-        },
         "WP_ENV": {
             "description": "Is this app for development or production?",
             "value": "development"
         },
-        "DATABASE_URL": {
+        "WORDPRESS_DB_HOST": {
             "description": "The URL to a MySQL database",
+            "value": ""
+        },
+        "WORDPRESS_DB_NAME": {
+            "description": "Table name for the database",
+            "value": ""
+        },
+        "WORDPRESS_DB_USER": {
+            "description": "User name for the database",
+            "value": ""
+        },
+        "WORDPRESS_DB_PASSWORD": {
+            "description": "Password for the database",
             "value": ""
         },
         "AUTH_KEY": {
@@ -60,5 +68,11 @@
         {
             "url": "heroku/php"
         }
-    ]
+    ],
+    "formation": {
+        "web": {
+          "quantity": 1,
+          "size": "free"
+        }
+      }
 }
