@@ -22,18 +22,17 @@ WORDPRESS_DB_PASSWORD=password
 
 Install Docker [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
 
-Clone this repository and change directory in `wordpress-docker-heroku`
+Clone this repository and change directory into `wordpress-docker-heroku`
 
-Create an `.env` file at the root of the directory, with the environment variables found below
+Create an `.env` file at the root of the directory, with the following environment variables
 ```
 IP=127.0.0.1
-
 WORDPRESS_DB_NAME=wordpress
 WORDPRESS_DB_USER=admin
 WORDPRESS_DB_PASSWORD=password
 ```
 
-Run docker
+Run docker 
 ```
 docker-compose up
 ```
@@ -41,7 +40,6 @@ docker-compose up
 The above is only required to be ran on initial install
 
 Run the start command if the containers/volume already exist.
-
 ```
 docker-compose start
 ```
