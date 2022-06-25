@@ -17,19 +17,23 @@
         },
         "WORDPRESS_DB_HOST": {
             "description": "The URL to a MySQL database",
-            "value": ""
+            "value": "",
+            "required": false
         },
         "WORDPRESS_DB_NAME": {
             "description": "Table name for the database",
-            "value": ""
+            "value": "",
+            "required": false
         },
         "WORDPRESS_DB_USER": {
             "description": "User name for the database",
-            "value": ""
+            "value": "",
+            "required": false
         },
         "WORDPRESS_DB_PASSWORD": {
             "description": "Password for the database",
-            "value": ""
+            "value": "",
+            "required": false
         },
         "WORDPRESS_AUTH_KEY": {
             "description": "wp-config secret key",
@@ -71,10 +75,9 @@
     ],
     "formation": {
         "web": {
-          "quantity": 1,
-          "size": "free"
+            "quantity": 1,
+            "size": "free"
         }
-      },
-      "stack": "heroku-22",
-      "logo": "https://d3a8m64wltxh5d.cloudfront.net/images/Logo.2e16d0ba.fill-140x64.png"
+    },
+    "stack": "heroku-22"
 }
