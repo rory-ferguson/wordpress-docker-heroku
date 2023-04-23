@@ -1,6 +1,6 @@
 # Wordpress-Docker-Heroku Template
 
-A working and simple WordPress project template for Heroku deployment and local Docker development.
+A working, as of 23rd April 2023, and simple WordPress project template for Heroku deployment and local Docker development.
 
 ## Deploying to Heroku
 
